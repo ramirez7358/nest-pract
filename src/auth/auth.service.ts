@@ -42,10 +42,10 @@ export class AuthService {
     });
 
     if (!user)
-      throw new UnauthorizedException('Credentials are not valid (email)');
+      throw new UnauthorizedException('Credentials are not valid (email) ');
 
     if (!bcrypt.compareSync(password, user.password))
-      throw new UnauthorizedException('Credentials are not valid (email)');
+      throw new UnauthorizedException('Credentials are not valid (email) ');
     return user;
   }
 
