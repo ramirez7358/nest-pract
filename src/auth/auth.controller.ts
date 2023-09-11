@@ -2,7 +2,7 @@ import { Controller, Post, Body, Get, Headers } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { CreateUserDto, LoginUserDto } from './dto';
 import { User } from './entities/user.entity';
-import { RawHeaders, GetUser, RoleProtected, Auth } from './decorators';
+import { RawHeaders, GetUser, Auth } from './decorators';
 import { IncomingHttpHeaders } from 'http2';
 
 @Controller('auth')
