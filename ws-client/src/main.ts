@@ -4,7 +4,11 @@ import { connectToServer } from './socket-client';
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1>Websocket - Client</h1>
-    <span>offline</span>
+    <span id="server-status">offline</span>
+
+    <ul id="clients-ul">
+      <li></li>
+    </ul>
   </div>
 `;
 
