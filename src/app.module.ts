@@ -9,6 +9,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
+import { MessageWsModule } from './message-ws/message-ws.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
     SeedModule,
     FilesModule,
     AuthModule,
+    MessageWsModule,
   ],
 })
 export class AppModule {}
